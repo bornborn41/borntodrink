@@ -13,12 +13,12 @@
 }
 
 
-body.dark {
+body.darkmode {
 	background: #292C35;
     color: white;
     
 }
-body.dark .name-product{
+body.darkmode .name-product{
     color: white;
     
 }

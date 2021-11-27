@@ -49,7 +49,7 @@ function objectProduct() {
 // console.log(objectProduct().products);
 // document.getElementById("list-drink").innerHTML = product.product[0].name
 function displayProduct(product) {
-    const products = product
+    const products = product;
     for (let i = 0; i <= products.length; i++) {
 
         document.getElementById("list-drink").innerHTML += `<div class="container"><img class="item" src="${products[i].image}" alt=""/><div class="name-product">${products[i].name}</div><button class="price"><i class="bi bi-cart-check-fill"></i> ${products[i].price} บาท</button></div>`
@@ -58,4 +58,4 @@ function displayProduct(product) {
 
 }
 
-displayProduct(objectProduct().products)
+displayProduct(objectProduct().products);
