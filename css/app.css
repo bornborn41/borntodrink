@@ -23,6 +23,12 @@ body.darkmode .name-product{
     
 }
 
+body.darkmode .price{    
+    color: white;
+    background-image: linear-gradient(to right, #ff3da8 , #f63b3b);
+    
+}
+
 .checkbox {
 	opacity: 0;
 	position: absolute;
@@ -71,9 +77,11 @@ body.darkmode .name-product{
     display: block;   
     text-align: center;
     margin-top:  30px;
+    font-size: 40px;
 }
 h1 #nav {
    display: inline-block; 
+   
 }
 #shopping {
     display: block;
