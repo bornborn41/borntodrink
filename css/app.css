@@ -7,10 +7,11 @@
 .switch{
     background-color: #fafafa;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 100px;
+    right: 60px;
     
 }
+
 
 body.dark {
 	background: #292C35;
