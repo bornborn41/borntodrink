@@ -1,6 +1,7 @@
 // Credit Image from  https://bluemochateas.com/เมนูปั่น/ title : แนะนำ 6 เมนูปั่น เมนูขายดีทำง่ายสร้างกำไร
 function objectProduct() {
-    return products = {
+
+    const products = {
         "products": [
             {
                 "id": 1,
@@ -44,18 +45,41 @@ function objectProduct() {
 
         ]
     };
+    return products;
 }
+
+
 
 // console.log(objectProduct().products);
 // document.getElementById("list-drink").innerHTML = product.product[0].name
-function displayProduct(product) {
-    const products = product;
-    for (let i = 0; i <= products.length; i++) {
+// function displayProduct(product) {
+//     const products = product;
+//     for (let i = 0; i <= products.length; i++) {
 
-        document.getElementById("list-drink").innerHTML += `<div class="container"><img class="item" src="${products[i].image}" alt=""/><div class="name-product">${products[i].name}</div><button class="price"><i class="bi bi-cart-check-fill"></i> ${products[i].price} บาท</button></div>`
+//         document.getElementById("list-drink").innerHTML += `<div class="container"><img class="item" src="${products[i].image}" alt=""/><div class="name-product">${products[i].name}</div><button class="price"><i class="bi bi-cart-check-fill"></i> ${products[i].price} บาท</button></div>`
+//     }
+
+
+// }
+// var product = objectProduct().products;
+// console.log(typeof product)
+// displayProduct(product);
+
+// function nameObjects(name) {
+//     for (i in name) {
+//         console.log(typeof name[i].name)
+//     }
+
+// }
+
+function displayProduct(elementId, product) {
+
+    for (i in product) {
+        document.getElementById(elementId).innerHTML += `<div class="container"><img class="item" src="${product[i].image}" alt=""/><div class="name-product">${product[i].name}</div><button class="price"><i class="bi bi-cart-check-fill"></i> ${product[i].price} บาท</button></div>`
     }
 
 
 }
 
-displayProduct(objectProduct().products);
+// nameObjects(objectProduct().products)
+displayProduct("list-drink", objectProduct().products);
