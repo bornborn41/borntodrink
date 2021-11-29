@@ -148,7 +148,7 @@ img{
     
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 600px) {
 
     #nav{
        
@@ -194,6 +194,7 @@ img{
     
     .container {
         margin: 0 auto;
+        padding: 2px;
         
       }
     .name-product {
