@@ -7,7 +7,7 @@
 .switch{    
     background-color: #fafafa;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 20px;
     
 }
@@ -99,12 +99,11 @@ h1 #nav {
 }
 
 #list-drink{
-    position: relative;
-    text-align: center;
-    margin-top: 10px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10px;
    
 }
 .item{
@@ -175,12 +174,11 @@ img{
         
     }
     #list-drink{
-        position: relative;
-        text-align: center;
         margin-top: 10px;
+        margin: 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        padding: 8px;
        
     }
     .item{
@@ -198,8 +196,8 @@ img{
     
     .container {
         position: relative;
-        margin: 0 4px;
-        padding: 2px;
+        margin: 0 ;
+        padding: 8px;
         height: 280px;
         
       }
