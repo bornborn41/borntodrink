@@ -61,7 +61,7 @@ body.darkmode .price{
 }
 
 .checkbox:checked + .label .ball {
-	transform: translateX(17px);
+	transform: translateX(18px);
 }
 
 
