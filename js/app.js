@@ -2,17 +2,6 @@ let darkMode = localStorage.getItem('darkMode');
 
 const darkModeToggle = document.getElementById('chk');
 
-console.log(darkModeToggle);
-// console.log(darkMode);
-
-// function checkOnLocalStorage() {
-//     if (!localStorage['chk']) return;
-//     var checked = localStorage['chk'].split(',');
-//     checked.map((id) => {
-//         document.getElementById(id).checked = true;
-//     })
-// }
-
 
 const checkedDarkMode = () => {
     // 1.add the class DarkMode to the Body element
@@ -20,11 +9,6 @@ const checkedDarkMode = () => {
 
     // 2.Update darkMode in the localStorage
     localStorage.setItem('darkMode', 'checked');
-
-    // 3.Update Checked in Checked Type
-    // document.checkbox.classList.add('checked');
-    // document.getElementById('chk').checked;
-    // checkOnLocalStorage();
 
 }
 const uncheckedDarkMode = () => {
@@ -62,17 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (var item of checkbox) {
         item.addEventListener("click", function () {
-            localStorage.s_item ? // verifico se existe localStorage
-                localStorage.s_item = localStorage.s_item.indexOf(this.id + ",") == -1 // verifico de localStorage contém o id
-                    ? localStorage.s_item + this.id + "," // não existe. Adiciono a id no loaclStorage
-                    : localStorage.s_item.replace(this.id + ",", "") : // já existe, apago do localStorage
-                localStorage.s_item = this.id + ",";  // não existe. Crio com o id do checkbox
+            localStorage.s_item ?
+                localStorage.s_item = localStorage.s_item.indexOf(this.id + ",") == -1
+                    ? localStorage.s_item + this.id + ","
+                    : localStorage.s_item.replace(this.id + ",", "") :
+                localStorage.s_item = this.id + ",";
         });
     }
 
-    if (localStorage.s_item) { // verifico se existe localStorage
-        for (var item of checkbox) { // existe, percorro as checkbox
-            item.checked = localStorage.s_item.indexOf(item.id + ",") != -1 ? true : false; // marco true nas ids que existem no localStorage
+    if (localStorage.s_item) {
+        for (var item of checkbox) {
+            item.checked = localStorage.s_item.indexOf(item.id + ",") != -1 ? true : false;
         }
     }
 });

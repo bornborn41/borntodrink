@@ -50,36 +50,13 @@ function objectProduct() {
 
 
 
-// console.log(objectProduct().products);
-// document.getElementById("list-drink").innerHTML = product.product[0].name
-// function displayProduct(product) {
-//     const products = product;
-//     for (let i = 0; i <= products.length; i++) {
-
-//         document.getElementById("list-drink").innerHTML += `<div class="container"><img class="item" src="${products[i].image}" alt=""/><div class="name-product">${products[i].name}</div><button class="price"><i class="bi bi-cart-check-fill"></i> ${products[i].price} บาท</button></div>`
-//     }
-
-
-// }
-// var product = objectProduct().products;
-// console.log(typeof product)
-// displayProduct(product);
-
-// function nameObjects(name) {
-//     for (i in name) {
-//         console.log(typeof name[i].name)
-//     }
-
-// }
-
 function displayProduct(elementId, product) {
 
-    for (i in product) {
+    for (const i in product) {
         document.getElementById(elementId).innerHTML += `<div class="container"><img class="item" src="${product[i].image}" alt=""/><div class="name-product">${product[i].name}</div><button class="price"><i class="bi bi-cart-check-fill"></i> ${product[i].price} บาท</button></div>`
     }
 
 
 }
 
-// nameObjects(objectProduct().products)
 displayProduct("list-drink", objectProduct().products);
