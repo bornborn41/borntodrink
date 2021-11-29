@@ -67,10 +67,12 @@ body.darkmode .price{
 
 .bi-moon {
 	color: #ffffff;
+    font-size: 10px;
 }
 
 .bi-sun {
 	color: #f39c12;
+    font-size: 12px;
 }
 
 #nav{
