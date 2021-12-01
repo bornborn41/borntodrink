@@ -28,9 +28,6 @@ body.darkmode .name-product{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.5);
-    border-bottom-right-radius: 1.25rem;
-    border-bottom-left-radius: 1.25rem;
-    
 }
 
 body.darkmode .price{    
@@ -90,6 +87,7 @@ body.darkmode .price{
     text-align: center;
     margin-top:  30px;
     font-size: 40px;
+    margin-bottom: 2rem;
 }
 h1 #nav {
    display: inline-block; 
@@ -126,13 +124,12 @@ h1 #nav {
    
 }
 .item{
-    margin-bottom: 100px;
+    
     padding: 10px;
-    font-size: 30px;
 }
 
 img{    
-    border-radius: 30px !important;
+    border-radius: 1rem ;
     width: 250px;
     height: 300px;
     object-fit: cover;
@@ -142,38 +139,38 @@ img{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    
+    
     
   }
 .name-product {
-    display: block;
     font-size: 18px;
     color: black;
     position: absolute;
-    bottom: 6em;    
-    width: 12.9em;
+    top: 10px;
+    width: 12.8em;
     height: 2em;
     text-align: center;
     padding: 4px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.5);
-    border-bottom-right-radius: 1.25rem;
-    border-bottom-left-radius: 1.25rem;
+    border-top-right-radius: .2rem;
+    border-top-left-radius: .2rem;
 
     
 }
 .price{
-    border-width: 0;
     position: absolute;
-    display: block;
     font-size: 20px;
     padding: 2px 10px;
-    border-radius: 40px ;
+    border-radius: .5rem ;
     background-image: linear-gradient(to right, #34d399 , #3b82f6);
     cursor: pointer;
-    justify-self: end;
-    bottom: 2em;
+    bottom: -0.5rem;
+    align-self: end;
     
 }
 .basket{
@@ -207,20 +204,23 @@ img{
     border-radius: 50%;
     background-color: rgb(230, 3, 3);
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 13px;
     text-align: center;
     border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
+    padding-top: 5px;
   }
 @media only screen and (max-width: 600px) {
 
     #nav{
        
         font-size: 30px;
+        margin-bottom: 2rem;
     }
     h1 #nav {
         display: block; 
         padding: 5rem;
+        
     }
    
 
@@ -232,36 +232,29 @@ img{
         
     }
     .item{
-        margin-bottom: 100px;
-        padding: 10px;
-        font-size: 30px;
+        height: 195px;
+        
     }
     
     img{    
-       
-        width: 160px;
-        height: 198px;
+        width: 132px;
+        height: 152px;
        
     }
-    .container {
-        height: 18rem;
-        
-      }
-    
+
 
     .name-product {
-        bottom: 7.32em;  
-        font-size: 15px;
+        bottom: 9.18em;  
+        font-size: 12px;
         font-weight: 200;
-        width: 10em;
+        width: 9.5em;
         height: 2em;
-        border-bottom-right-radius: 1.69rem;
-        border-bottom-left-radius: 1.69rem;
+        border-top-right-radius: .2rem;
+        border-top-left-radius: .2rem;
 
     }
     .price{
-        bottom: 2.8em;
-        font-size: 15px;
+        font-size: 10px;
         
     }
     .basket{
@@ -275,7 +268,9 @@ img{
     .basket .badge {
         height: 25px;
         width: 25px;
-        font-size: 13px;
+        font-size: 11px;
+        padding-top: 4px;
+        text-align: center;
 
     }
 

@@ -48,15 +48,69 @@ function objectProduct() {
     return products;
 }
 
+function shoppingCount(productId, countClicked) {
+
+    console.log(productId, countClicked)
+
+
+
+
+
+}
+
+function countClicked() {
+    var count = 0
+    var btn = document.getElementById(productId)
+
+    btn.OnClick = function () {
+        return count++;
+    }
+
+
+}
+
+function clickedProduct(productId) {
+    // document.getElementById(productId).onclick = function () {
+    // alert("button was clicked" + productId);
+
+    let count = 0
+    var product = document.getElementById(productId)
+    product.onclick = function () {
+
+        count++;
+        console.log(productId, count);
+        document.getElementById("piece").innerHTML = count;
+        document.getElementById("piece2").innerHTML = count;
+    };
+    console.log(productId)
+
+
+
+}
+
+function displayPiece(elementId, productsId) {
+    // console.log(elementId, productsId)
+    document.getElementById(elementId).innerHTML = productsId;
+}
 
 
 function displayProduct(elementId, product) {
 
     for (const i in product) {
-        document.getElementById(elementId).innerHTML += `<div class="container"><img class="item" src="${product[i].image}" alt=""/><div class="name-product">${product[i].name}</div><button class="price"><i class="bi bi-cart-check-fill"></i> ${product[i].price} บาท</button></div>`
+        document.getElementById(elementId).innerHTML +=
+            `<div class="container">
+                <img class="item" src="${product[i].image}" alt=""/>
+                <div class="name-product">${product[i].name}</div>
+                <button class="price" id="${product[i].id}" type="button" onclick="clickedProduct(${product[i].id});">
+                <i class="bi bi-cart-check-fill"></i>${product[i].price} บาท
+                </button>
+            </div>`
     }
 
 
 }
 
 displayProduct("list-drink", objectProduct().products);
+displayPiece("piece", 0);
+displayPiece("piece2", 0);
+
